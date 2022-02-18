@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Desafio 1/fontes/LexendDeca-Regular.ttf" rel="stylesheet">
+    <link href="../Desafio 1/fontes/Inter-Medium.ttf" rel="stylesheet">
+    <link href="../Desafio 1/fontes/Inter-Regular.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+
+* {
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+  --blue: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+
+  --title: #313131;
+  --text: #B6B6B6;
+  
+  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+html{
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    background: #00000011;
+}
+.main{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.post{
+    background: white;
+    justify-content: center;
+    width: 60vw;
+    margin-top: 5%;
+    padding: 1%;
+    box-shadow: 10px rgba(0, 0, 0, 0.048);
+    
+    
+}
+header{
+    background: var(--linear);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /*width: 100%;*/
+    height: 15vh;
+    padding: 2.5% 20%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.pesquisa{
+    height: 6vh;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+input{
+    background: rgba(255, 255, 255, 0.041);
+    border:none;
+    background: none;
+    
+}
+
+.lupa{
+    width: 30px;
+    color: rgb(255, 254, 254);
+    height: 30px;
+    margin: 1%;
+}
+
+.digite{
+    width: 100%;
+    font-size: 16px;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+}
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.801);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+    </style>
+</head>
+<body style="height: 100%;">
+    <header>
+        <div class="cabecalho">
+            <p>Codelândia</p><p>Blog</p>
+        </div>
+        <div class="pesquisa">
+            <img alt="svgImg" class="lupa" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTcyLjI0LDEwLjMyYy0zMi4zMzA2MiwwIC01OC40OCwyNi4xNDkzOCAtNTguNDgsNTguNDhjMCwzMi4zMzA2MyAyNi4xNDkzOCw1OC40OCA1OC40OCw1OC40OGMxMS41NDI4MSwwIDIyLjIyNTYzLC0zLjM4NjI1IDMxLjI4MjUsLTkuMTM3NWw0Mi4yNDc1LDQyLjI0NzVsMTQuNjIsLTE0LjYybC00MS43MSwtNDEuNjAyNWM3LjQ5ODEzLC05LjgzNjI1IDEyLjA0LC0yMi4wMjQwNiAxMi4wNCwtMzUuMzY3NWMwLC0zMi4zMzA2MiAtMjYuMTQ5MzcsLTU4LjQ4IC01OC40OCwtNTguNDh6TTcyLjI0LDI0LjA4YzI0Ljc2NTMxLDAgNDQuNzIsMTkuOTU0NjkgNDQuNzIsNDQuNzJjMCwyNC43NjUzMSAtMTkuOTU0NjksNDQuNzIgLTQ0LjcyLDQ0LjcyYy0yNC43NjUzMSwwIC00NC43MiwtMTkuOTU0NjkgLTQ0LjcyLC00NC43MmMwLC0yNC43NjUzMSAxOS45NTQ2OSwtNDQuNzIgNDQuNzIsLTQ0LjcyeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"/>
+            <input type="search" class="digite" placeholder="Digite Aqui sua Pesquisa">
+        </div>
+    </header>
+    <div class="main container">
+        <div class="post">
+            <h3>Lorem ipsum</h3>
+            <p>26 de jan 2022</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis vel praesentium reiciendis accusantium ab tenetur at cumque quas laborum perspiciatis facilis saepe aliquid nesciunt maiores iste sunt odit, corporis porro.</p>
+        </div>
+
+    </div>
+</body>
+</html>
